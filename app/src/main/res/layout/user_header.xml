@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:padding="10dp"
+    android:background="@color/teal_200">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/avatar"
+        android:src="@drawable/dingzhen"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/user_password_info"
+        android:paddingStart="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="123456789"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:id="@+id/user_name_info"
+        android:paddingStart="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="丁真"
+        android:layout_above="@id/user_password_info"
+        android:textSize="16sp"/>
+</RelativeLayout>

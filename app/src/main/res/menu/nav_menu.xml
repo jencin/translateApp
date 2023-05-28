@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/play"
+            android:title="播放音乐"
+            android:icon="@drawable/play"
+            />
+
+        <item
+            android:id="@+id/pause"
+            android:title="暂停音乐"
+            android:icon="@drawable/pause"/>
+
+        <item
+            android:id="@+id/history"
+            android:title="历史记录"
+            android:icon="@drawable/history" />
+
+        <item
+            android:id="@+id/sign_out"
+            android:title="注销"
+            android:icon="@drawable/sing_out">
+        </item>
+
+
+        <item
+            android:id="@+id/exit"
+            android:title="退出"
+            android:icon="@drawable/exit">
+        </item>
+    </group>
+
+</menu>
