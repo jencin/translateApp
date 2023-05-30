@@ -47,10 +47,10 @@ class LoginActivity : BaseActivity(), View.OnClickListener{
         val job = Job()
         val scope = CoroutineScope(job)
         scope.launch {
-            val mylist = ServiceCreator.create<UserService>().getUserList().await()
+
             delay(1000)
             runOnUiThread{
-                viewModel = ViewModelProvider(context, LoginViewModelFactory(mylist)).get(LoginViewModel::class.java)
+
                 isInit = true
                 binding.progressBar.visibility = View.INVISIBLE
             }
@@ -153,8 +153,7 @@ class LoginActivity : BaseActivity(), View.OnClickListener{
                     else if(username == "" || password == ""){
                         Toasty.warning(this, "用户名或密码不可以为空", Toast.LENGTH_SHORT, true).show();
                     }else{
-                        // 服务器端登录的用户,使用默认头像？
-                        if(checkServer(username, password)) return
+
 
 
                         // 数据库内存储的用户登录

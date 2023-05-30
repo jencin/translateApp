@@ -43,8 +43,8 @@ import kotlin.random.Random
 
 class TranslateActivity : BaseActivity() , View.OnClickListener{
     private lateinit var binding : ActivityTranslateBinding
-    private val appid = "20230525001689746"
-    private val key = "qNssdnzAVq3lGKtQj3X2"
+    private val appid = ""                 // 请添加你申请到的百度翻译api ID
+    private val key =  ""                  // 请添加你申请到的百度翻译api 令牌码
     private val httpStr = "https://fanyi-api.baidu.com/api/trans/vip/translate/"
 
     private var fromType : String = "en"
@@ -342,7 +342,6 @@ class TranslateActivity : BaseActivity() , View.OnClickListener{
                     }
                 }
             }
-
             override fun onFailure(call: Call<TranslateResult>, t: Throwable) {
                 Log.d("TranslateActivity: ", "response fail")
 
